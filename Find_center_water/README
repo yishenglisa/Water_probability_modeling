@@ -16,3 +16,6 @@ files with the water molecules at the most probable position.
 In addition, in 'analysis_function.py':
 We made 'buiild_density_pdb' function for visualizing each water molecule with its KDE in PyMOL;
 I fixed the 'rigid_transform_3D' function to ensure a right-handed coordinate system, but haven't tested it.
+
+**medoid_shift.py is not used currently for less than ideal performance of finding the most probable water position and is replaced by HDBSCAN clustering. 
+It might be useful for the future reference, as a less arbitrary alternative to meanshift algorithm.  
