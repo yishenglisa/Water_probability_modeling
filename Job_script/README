@@ -5,4 +5,4 @@ This folder contains bash scripts for submitting jobs onto Wynton.
 2)analysis_functions.py
 3)visualize_water.py
 
-"run_find_water_cluster_center.sh" run one python script: HDBSCAN.py
+"run_find_water_cluster_center.sh" runs one python script: HDBSCAN.py
