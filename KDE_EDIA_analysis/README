@@ -1,0 +1,2 @@
+This folder includes analysis of comparing KDE and EDIA of 135l for different bandwidths and different residue types(2023-01-26_135l_KDE_EDIA.py); 
+and analyis of RMSD between water molecules and CA of each residue in 135l.(Water_Pestimation.py)
