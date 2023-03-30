@@ -1,0 +1,8 @@
+This folder contains bash scripts for submitting jobs onto Wynton.
+
+"run_KDE_full.sh" runs three python scripts:
+1)place_all_full_protein.py
+2)analysis_functions.py
+3)visualize_water.py
+
+"run_find_water_cluster_center.sh" run one python script: HDBSCAN.py
