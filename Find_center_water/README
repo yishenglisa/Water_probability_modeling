@@ -1,0 +1,13 @@
+Scripts in this folder are used to find the most probable positions of water molecule given a structural element of interest.
+'place_all_full_protein.py' places water molecules onto the structure of interest. It generates two npys files: 
+'f{pdb}_all_out_coord_test_50000_wat_new_analysis.npy', which includes coordinates of all water molecules.
+and f'{pdb}_normalization_{norm}_50000_wat_new_analysis.npy', which includes normalization information for each water molecules.
+'KDE_full_protein.py' performs kernel density estimation on each water molecule; in addition, 'visualize_water.py' makes pdb files of "solvated structural 
+element" with -log(KDE) in the bfactor columne for easy visualization in PyMOL.
+'HDBSCAN.py' picks cutoff for KDE and performs density clustering on filtered data (water molecule with KDE above some given threshold), and makes pdb 
+files with the water molecules at the most probable position. 
+
+
+In addition, in 'analysis_function.py':
+We made 'buiild_density_pdb' function for visualizing each water molecule with its KDE in PyMOL;
+I fixed the 'rigid_transform_3D' function to ensure a right-handed coordinate system, but haven't tested it.
